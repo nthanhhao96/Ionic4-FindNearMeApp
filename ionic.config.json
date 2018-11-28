@@ -1,0 +1,8 @@
+{
+  "name": "FindNearMeApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "d9a3fbe0"
+}
