@@ -1,0 +1,52 @@
+<ion-header>
+
+    <ion-toolbar class="color_header">
+      <ion-title>Get Distances</ion-title>
+    </ion-toolbar>
+  
+    <ion-toolbar class="sub_header" no-padding>
+      <ion-row class="get_distance">
+          <ion-col col-4 no-padding>
+              <span text-center>1.5 KM</span>
+          </ion-col>
+          <ion-col col-8>
+              <span><i class="app-train"></i></span>
+              <span><i class="app-car"></i></span>
+              <span class="active_icon"><i class="app-run"></i></span>
+          </ion-col>
+      </ion-row>
+    </ion-toolbar>
+   
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <div class="from_to">
+          <ion-icon color="primary" name="md-swap" class="arrow"></ion-icon>
+          <ion-item no-padding>
+              <i  class="app-circle-empty" item-start></i>
+              Your Location
+          </ion-item> 
+          <ion-item no-padding> 
+              <ion-icon name="pin"  item-start></ion-icon>
+              Restaurant
+          </ion-item> 
+      </div>
+      <div class="map_path">
+         <ion-item class="main_title" no-padding no-lines>
+              <i  class="app-run" item-start></i>
+              Your Location
+              <span item-end>34 MIN</span>
+          </ion-item> 
+          <div #map class="map_div2"></div> 
+          <p>Start Navigation</p>  
+      </div>
+      <div class="near_places">
+          <ion-item class="main_title" no-padding no-lines>
+              <i  class="app-run" item-start></i>
+              Your Location
+              <span item-end>34 MIN<span>2.5KM</span></span>
+          </ion-item> 
+      </div> 
+  </ion-content>
+  

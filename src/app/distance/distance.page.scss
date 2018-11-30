@@ -1,0 +1,100 @@
+    .color_header{
+        box-shadow: none;
+        .toolbar-background-ios{
+            background: var(--ion-color-secondary);
+        }
+    }
+    .sub_header{
+        box-shadow: none;
+        .get_distance{
+            background: var(--ion-color-secondary);
+            border-radius: 0;
+            margin: 0;
+            padding: 0 10px 10px 10px;
+        }
+    }
+
+    .from_to{
+        position: relative;
+        border-bottom: 1px solid var(--ion-color-dark);  
+        &:after{
+            content: '';
+            position: absolute;
+            left: 11px;
+            top: 28px;
+            border-right: 1px dotted var(--ion-color-secondary);
+            width: 1px;
+            height: 26px;
+        }
+        .arrow{
+            position: absolute;
+            right: 0;
+            top: 29px;
+            z-index: 1000;
+            font-size: 27px;
+            transform: rotate(90deg);
+        }
+        .item-ios{
+            font-size: 1.4rem;
+            color:var(--ion-color-dark);  
+            width: calc(100% - 40px);
+            &:last-of-type{
+                .item-inner{
+                   border: none;
+                } 
+            }
+            [item-start]{
+                width: 25px;
+                color:  var(--ion-color-secondary);
+                display: inline-block;
+                text-align: center;
+            }
+            ion-icon{
+                font-size: 20px;
+            }
+            .item-inner{
+               padding: 0;    
+            }
+        } 
+    }
+    .map_path{
+        border-bottom: 1px solid var(--ion-color-dark);  
+        display: inline-block;
+        width: 100%;
+        p{
+            float: right;
+            color: var(--ion-color-primary);
+        }
+    }
+    .main_title{
+    color: var(--ion-color-dark); 
+    font-size: 1.6rem; 
+        .item-inner{
+            padding: 0 !important;
+        }
+        [item-start]{
+            color:  var(--ion-color-secondary);
+            font-size: 22px;
+            margin-right: 5px;
+        }
+        [item-end]{
+            color: var(--ion-color-secondary);
+            margin-right: 0;
+            font-size: 1.3rem;
+            text-align: right;
+        }
+    }
+    .near_places{
+        [item-end]{
+            span{
+               color: var(--ion-color-primary);
+               font-size: 1.7rem;
+               display: block;
+               margin-top: 5px;
+            }
+        }
+    }
+    .map_div2{
+        height: 180px;
+    }
+

@@ -1,0 +1,31 @@
+<ion-content padding>
+    <div class="facebook social_media">
+        <p><i class="app-facebook"></i> Connect with <span>Facebook</span></p>
+    </div>
+    <div class="twitter social_media">
+        <p><i class="app-twitter"></i> Connect with <span>Twitter</span></p>
+    </div>
+
+    <div class="account_setting">
+        <h3>Account Setting</h3>
+        <ion-list no-margin>
+            <ion-item (click)="openprofile()" no-padding no-lines>
+                Profile Update
+                <ion-icon name="arrow-forward" item-end></ion-icon>
+            </ion-item>
+           
+            <ion-item mode="md" no-padding no-lines>
+                <ion-label>Location Tracking</ion-label>
+                <ion-toggle  mode="md" checked></ion-toggle>
+            </ion-item>
+            <ion-item mode="md" no-padding no-lines>
+                <ion-label>Notifications</ion-label>
+                <ion-toggle  mode="md"></ion-toggle>
+            </ion-item>
+            <ion-item (click)="logout()" no-padding no-lines>
+                    Log Out
+                    <ion-icon name="arrow-forward" item-end></ion-icon>
+                </ion-item>
+        </ion-list>
+    </div>
+</ion-content>

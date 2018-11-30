@@ -1,0 +1,103 @@
+    .scroll-content{
+        margin-top: 107px !important;
+    }
+    .search_bar{
+        box-shadow: none;
+        margin-top: 3px;
+        .searchbar-ios{
+            .searchbar-input {
+                color: var(--ion-color-secondary);
+                background: var(--ion-color-lightcolor);
+                border-radius: 9px;
+            }
+            .searchbar-search-icon {
+                top: 12px;
+            }
+        }
+    }
+
+/* item style*/
+.item_content{
+    margin-bottom: 10px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    .short_description{
+        background: var(--ion-color-secondary);
+        border-radius: 10px;
+        padding: 10px;
+        .item-ios{
+            background: none;
+            padding: 0;
+            margin-bottom: 10px;
+                ion-avatar {
+                    min-width: 60px;
+                    min-height: 60px;
+                    margin: 0 10px 0 0;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+                .item-inner{
+                    padding: 0;
+                    ion-label{
+                        p{
+                            white-space: normal;
+                            max-height: 34px;
+                        }
+                        h2{
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            font-weight: 500;
+                        }
+                    }
+                    .rate{
+                        text-align: center;
+                        font-size: 13px;
+                        margin: 0;
+                        border-left: 1px solid rgba(var(--ion-color-light),.8);
+                        padding-left: 10px;
+                        span{
+                        display: block;
+                        color: var(--ion-color-secondary);
+                        font-size: 35px;
+                        }
+                    }
+                }
+            }
+        ion-row{
+            ion-col{
+                h3{
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                }
+                p{ 
+                    span{
+                        color: var(--ion-color-light);   
+                        padding-right: 10px;
+                    }
+                    i{
+                        color: var(--ion-color-light);   
+                    }
+                }
+            }
+        }
+        h2 , h3 ,p{
+        color: var(--ion-color-light);    
+        }
+    }
+    .like_share{
+    background: var(--ion-color-lightcolor);
+    border-radius: 0 0 10px 10px;
+    margin: 0 10px;
+    p{
+        color: var(--ion-color-secondary);
+        margin: 5px;
+        ion-icon{
+            margin-right: 20px;
+        }
+    }
+    }
+}

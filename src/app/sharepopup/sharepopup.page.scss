@@ -1,0 +1,31 @@
+.share-popover{
+    .popover-content{
+     box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.4);  
+     width:160px;
+        .shareIcon{
+            ion-icon{
+            width: 30px;
+            height: 30px;
+            line-height:30px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            color: var(--ion-color-light);
+            font-size: 20px;
+            border: 1px solid rgba(0,0,0,.1);
+            }
+            .ion-logo-whatsapp{
+            background: var(--ion-color-whatsapp);
+            }
+            .ion-logo-facebook{
+            background: var(--ion-color-facebook);
+            }
+            .ion-logo-twitter{
+            background: var(--ion-color-twitter);
+            }
+            .ion-logo-googleplus{
+            background:var(--ion-color-google);
+            }
+        }
+    }
+}

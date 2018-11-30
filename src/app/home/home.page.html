@@ -1,10 +1,68 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
+    
+<ion-content>
+    
+    <ion-searchbar> </ion-searchbar>
+    
+    <img src="assets/images/maps.jpg">
+    <div #map id="map" class="map_div"></div>  
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+    
+    <div class="search_form">
+       
+       
+    </div>
+  
 </ion-content>
+
+
+<!--
+
+ PR Testing
+
+
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Searchbars
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        {{ item }}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+
+  <ion-content>
+    
+    <div #map id="map" class="map_div"></div>  
+
+    
+    <div class="search_form">
+       <button class="cat_btn" (click)="presentModal()" ion-button icon-only>
+          <img src="assets/images/ic1.png">
+       </button>
+       <ion-searchbar></ion-searchbar>
+    </div>
+   </ion-content>
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        Map
+      </ion-title>
+      <ion-buttons end>
+        <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+      </ion-buttons> 
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content>
+    <div #map id="map"></div> 
+  </ion-content>
+
+-->

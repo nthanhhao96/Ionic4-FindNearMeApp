@@ -1,0 +1,67 @@
+
+<ion-header>
+
+    <ion-toolbar>
+      <ion-title>Restaurant</ion-title>
+    </ion-toolbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+      <ion-row class="get_distance">
+          <ion-col col-4 no-padding>
+             <span text-center>1.5 KM</span>
+          </ion-col>
+          <ion-col col-8>
+                <span href="/distance" routerDirection="forward" (click)="showMap(1)" [ngClass]="{'active_icon':selecttype==1}"><i class="app-train"></i></span>
+                <span href="/distance" routerDirection="forward" (click)="showMap(2)" [ngClass]="{'active_icon':selecttype==2}"><i class="app-car"></i></span>
+                <span href="/distance" routerDirection="forward" (click)="showMap(3)" [ngClass]="{'active_icon':selecttype==3}"><i class="app-run"></i></span>
+          </ion-col>
+      </ion-row>
+      <div class="detail_content">
+            <ion-item  no-lines>
+              <ion-avatar item-start>
+                <img src="assets/images/001.png">
+              </ion-avatar>
+              <h2>Tropical restaurant</h2>
+              <p> 50-High Street, Helsinki, Finland</p>
+              <ion-row class="like_share">
+                <ion-col col-6 no-padding>
+                    <p (click)="likeDetail=!likeDetail"><ion-icon *ngIf="!likeDetail" color="light" name="star"></ion-icon>
+                    <ion-icon color="primary" name="star"></ion-icon>Like</p>
+                </ion-col>
+                <ion-col col-6 no-padding>
+                    <p (click)="sharePopover($event)"><ion-icon color="light" name="md-share"></ion-icon>Share</p>
+                </ion-col>
+              </ion-row>
+            </ion-item>
+            <div class="work_time" padding-vertical>
+              <h3 text-uppercase>opening hours <span>(open now)</span></h3>
+              <p><span>Everyday</span> 9AM–11PM</p>
+            </div>
+            <ion-row class="rate_div" padding-vertical>
+              <ion-col col-5 no-padding>
+                  <p><span>4.0</span>780 Rating</p>
+              </ion-col>
+              <ion-col col-7 no-padding>
+                  <h3 no-margin>Rate</h3>
+                  <ion-icon class="rate_icon" *ngFor="let icon of icons" [name]="icon" color="light"></ion-icon>
+              </ion-col>
+            </ion-row>
+      </div>
+      <div class="comments" padding-top>
+            <h3 text-uppercase margin-bottom>comments</h3>  
+            <ion-item no-lines>
+                <ion-avatar item-start>
+                    <img src="assets/images/003.png">
+                </ion-avatar>
+                <h2>Matti Virtanen <span>1 days ago</span></h2>
+                <ion-icon *ngFor="let icon of icons" [name]="icon" color="ratecolor"></ion-icon>
+                <span class="rate-value">3.5</span>
+                <p>Good service and great food!</p>
+            </ion-item>
+            <ion-textarea rows="1" placeholder="write your comment"></ion-textarea>
+      </div>
+  </ion-content>
+  

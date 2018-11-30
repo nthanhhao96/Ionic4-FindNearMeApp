@@ -1,0 +1,62 @@
+    .scroll-content {
+        padding: 20px !important;
+        margin-bottom: 0px !important;
+    }
+   .logo{
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 190px;
+            margin-bottom: 5px;
+        }
+        p{
+            color: var(--ion-color-secondary);
+            font-size: 16px;
+        }
+   } 
+   .login_form{
+        min-height: calc(100% - 250px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .list-ios{
+            border: 1px solid rgba(var(--ion-color-dark),.7);;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            padding: 10px 16px;
+            .item-ios{
+            font-size: 15px;
+            border-bottom: 1px solid rgba(var(--ion-color-dark),.7);
+            &:last-child{
+               border: none; 
+            }
+                .item-inner{
+                   padding-right: 0;
+                   [item-end]{
+                      color: var(--ion-color-secondary);  
+                      z-index: 1000;
+                   }
+                } 
+            }
+        }
+        .button-ios{
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+   }
+   .create_account{
+       p{
+        color: var(--ion-color-secondary);
+        font-size: 15px;
+        margin-bottom: 0;  
+       }
+       .button-ios{
+          color: rgba(var(--ion-color-dark),.7); 
+          height: 25px;
+       }
+   }
+
+

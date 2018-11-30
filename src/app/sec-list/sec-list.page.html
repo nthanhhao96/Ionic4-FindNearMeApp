@@ -1,0 +1,47 @@
+<ion-header>
+
+    <ion-toolbar>
+      <ion-title>Restaurant</ion-title>
+    </ion-toolbar>
+    <ion-toolbar class="search_bar">
+       <ion-searchbar></ion-searchbar>
+    </ion-toolbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <div *ngFor="let item of secList" class="item_content">
+    <div class="short_description" href="/detail" routerDirection="forward">
+      <ion-item no-lines>
+        <ion-avatar item-start>
+          <img src="{{item.img}}">
+        </ion-avatar>
+        <h2>{{item.title}}</h2>
+        <p> 50-High Street, Helsinki, Finland</p>
+  
+        <p class="rate" item-end><span>{{item.rate}}</span>780 Rating</p>
+      </ion-item>
+      <ion-row>
+          <ion-col col-6 no-padding>
+             <h3>Open</h3>
+             <p no-margin><span>Today:</span>9AM–10PM</p>
+          </ion-col>
+          <ion-col col-6 text-center no-padding>
+             <h3>Distance</h3>
+             <p no-margin><i class="app-run"></i>10 min</p>
+          </ion-col>
+      </ion-row>
+    </div>
+    <ion-row class="like_share" text-center>
+        <ion-col col-6>
+            <p (click)="likeItem(item)"><ion-icon *ngIf="!item.like" color="dark" name="star"></ion-icon>
+            <ion-icon *ngIf="item.like" color="secondary" name="star"></ion-icon>Like</p>
+        </ion-col>
+        <ion-col col-6>
+            <p (click)="sharePopover($event)"><ion-icon color="dark" name="md-share"></ion-icon>Share</p>
+        </ion-col>
+    </ion-row>
+    </div>
+  </ion-content>
+  

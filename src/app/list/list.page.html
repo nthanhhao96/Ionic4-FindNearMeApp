@@ -1,0 +1,10 @@
+<ion-content padding>
+    <ion-list no-margin>
+        <ion-item href="/sec-list" routerDirection="forward" *ngFor="let item of list" text-center no-lines>
+          <img src="{{item.img}}">
+          {{item.title}}
+          <div class="num_items"><span class="number">{{item.num}}</span><span class="distance">5 KM</span></div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+ 

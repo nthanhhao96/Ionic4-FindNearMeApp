@@ -1,0 +1,97 @@
+    .scroll-content {
+        padding: 20px !important;
+        margin-bottom: 0px !important;
+    }
+   .profile_img{
+        position: relative;
+        width: 120px;
+        margin: 0 auto;
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .upload_img{
+            width: 33px;
+            height: 33px;
+            line-height: 33px;
+            border-radius: 50%;
+            background: var(--ion-color-twitter);
+            position: absolute;
+            bottom: 8px;
+            right: 0;
+            font-size: 11px;
+            text-align: center;
+            ion-icon{
+                line-height: inherit;
+                font-size: 25px;
+            }
+        }
+   }
+   .user_name{
+       padding: 10px 0;
+       margin-top: 10px;
+       position: relative;
+       .text-input-ios{
+            margin: 0;
+            font-size: 19px;
+            font-weight: 500;
+            color: var(--ion-color-secondary);
+            width: 140px;
+       }
+       .button-ios{
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background: var(--ion-color-secondary);
+            position: absolute;
+            bottom: 8px;
+            right: 0;
+            font-size: 11px;
+            opacity: 1 !important;
+            text-align: center;
+            ion-icon{
+                padding: 0;
+                width: 33px;
+                text-align: center;
+                &.save_icon{
+                font-size: 43px;
+                }
+            }  
+        }
+   }
+
+   .profile_form{
+       background: var(--ion-color-secondary);
+       border-radius: 10px;
+       padding: 10px 10px 20px 10px;
+        .item-ios{
+            background: none;
+            .item-inner{
+                padding: 0;
+                .input-wrapper{
+                display: block;
+                    .label-ios{
+                        max-width: 100%;
+                        width: 100%;
+                        margin-bottom: 0;
+                        color: var(--ion-color-primary);
+                        margin-bottom: 5px;
+                    }
+                    ion-input, ion-textarea{
+                        background: var(--ion-color-light);
+                        border-radius: 7px;
+                        padding:1px 10px;
+                        .text-input-ios{
+                            margin: 10px 0 !important;
+                            width: 100%;
+                            font-size: 16px;
+                        }
+                    }    
+                }
+            }
+        }
+   }
+    
+

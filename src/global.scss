@@ -9,3 +9,47 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+.tabs-ios { 
+    .tabbar{
+         box-shadow: 1px 0px 7px rgba(var(--ion-color-dark),.3);
+         border: none !important;
+         top: 0 !important;
+        .icon-only {
+            min-height: 55px !important;
+        }
+    }
+    .tab-button[aria-selected=true] {
+        border-bottom: 3px solid var(--ion-color-secondary);
+    }
+}
+.toolbar-ios{
+    box-shadow: 1px 0px 7px rgba(var(--ion-color-dark),.3);
+    ion-title {
+        padding: 0 50px 1px;
+    }
+    .back-button-icon-ios {
+        font-size: 2.4rem;
+        margin-left: 5px;
+    }
+} 
+h3{
+    font-size: 1.7rem;
+}
+
+.selected-flag{
+   padding: 0 !important;
+}
+.intl-tel-input{
+   .flag-container{
+       padding: 0;
+       left: 8px !important;
+   }
+}  
+
+.platform-ios .tabs-ios .tabbar .icon-only{
+    padding-top: 12px;
+}
+.statusbar-padding .scroll-content{
+    padding-top: 16px !important;
+}

@@ -1,0 +1,32 @@
+<ion-content padding>
+    <div class="profile_img">
+        <img src="{{img}}">
+        <span class="upload_img" (click)="getPhoto()"><ion-icon color="secondary" name="ios-camera-outline"></ion-icon></span>
+    </div>
+    <div class="user_name">
+        <ion-input type="text" value="Ms. Juli John" disabled="{{isDisabled}}"  text-center></ion-input>
+        <button ion-button icon-only clear (click)="changeData()">
+            <ion-icon name="md-create" *ngIf="isDisabled"></ion-icon>
+            <ion-icon name="checkmark" *ngIf="!isDisabled" class="save_icon"></ion-icon>
+        </button>
+    </div>
+   
+
+    <ion-list class="profile_form" no-margin>
+
+        <ion-item no-lines no-padding>
+            <ion-label>Phone Number</ion-label>
+            <ion-input id="elemtId" type="tel" value="+358402937266" disabled="{{isDisabled}}"></ion-input>
+        </ion-item>
+        <ion-item no-lines no-padding>
+            <ion-label>Email</ion-label>
+            <ion-input type="email" value="julijohn@gmail.com" disabled="{{isDisabled}}"></ion-input>
+        </ion-item>
+        <ion-item no-lines no-padding>
+            <ion-label>My Location</ion-label>
+            <ion-textarea  value="Vanha maantie 9, FI-02640, Espoo" disabled="{{isDisabled}}"></ion-textarea>
+        </ion-item>
+
+    </ion-list>
+
+</ion-content>

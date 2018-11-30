@@ -1,0 +1,44 @@
+.category_modal{
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    height: calc(100% - 140px);
+    margin-top: 75px;
+    background: var(--ion-color-secondary);
+    border-radius: 20px;
+    position: relative;
+        .item-ios{
+        background: none;
+        padding: 0;
+        color: var(--ion-color-light);
+            .checkbox-ios {
+                .checkbox-icon {
+                    border: none;
+                    border-radius: 6px;
+                    background: var(--ion-color-light);
+                    .checkbox-inner {
+                        left: 11px;
+                        top: -6px;
+                        width: 10px;
+                        height: 21px;
+                        border-width: 4px; 
+                        border-top-width: 0;
+                        border-left-width: 0;
+                        border-color: var(--ion-color-primary);
+                        border-radius: 2px;
+                    }
+                }
+            }
+        }
+        .close_btn{
+            position: fixed;
+            top: 85px;
+            right: 20px;
+            color: var(--ion-color-light);
+            font-size: 19px;
+            height: 25px;
+            width: 25px;
+            z-index: 1000;
+        }
+    }
+    
+    

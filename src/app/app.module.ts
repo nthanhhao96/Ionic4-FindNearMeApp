@@ -9,6 +9,18 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { Camera } from '@ionic-native/camera/ngx';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
+const config = {
+      backButtonText: '',
+      backButtonIcon: 'md-arrow-back',
+      iconMode: 'ios',
+      pageTransition: 'ios',
+      mode: 'ios',
+      tabsPlacement: 'top'
+    };
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -16,6 +28,8 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
+    Camera,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

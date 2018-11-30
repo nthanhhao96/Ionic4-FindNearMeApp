@@ -1,0 +1,78 @@
+
+<ion-content class="login_register" padding text-center>
+    <div class="logo">
+      <img src="assets/imgs/logo.png">
+      <h2 no-margin color ="secondary">Find Near Me</h2>
+      <p no-margin>Howdy, login to continue</p>
+    </div>
+    <div class="login_form">
+      <ion-list  no-margin>
+  
+        <ion-item no-lines no-padding>
+          <ion-input type="email" placeholder="Email address" value="" no-margin></ion-input>
+        </ion-item>
+  
+        <ion-item no-lines no-padding>
+          <ion-input type="password" placeholder="Password" no-margin></ion-input>
+          <span (click)="forgotPassword()" item-end>forget</span>
+        </ion-item>
+  
+      </ion-list>
+      <button color="secondary" ion-button href="/tabs" routerDirection="forward" block round>Login</button>
+      
+      
+    </div>
+   
+    <div class="create_account">
+      <img src="assets/imgs/facebook.png" class="myBut"> 
+      
+      <img src="assets/imgs/twitter.png" class="twBut">
+  
+    </div>
+     
+  
+    <div class="create_account">
+      
+        <button class="myButton" ion-button href="/register" routerDirection="forward" color="myWhite" text-uppercase round outline>No Account?</button>
+    </div>
+  
+  
+    <div class="create_account">
+      
+        <button text-uppercase ion-button href="/register" routerDirection="forward" clear>Sign up</button>
+      </div>
+      
+  </ion-content>
+  
+  
+  
+  
+  <!--
+  
+  <ion-content class="login_register" padding text-center>
+      <div class="logo">
+        <img src="assets/images/logo.png">
+        <p no-margin>Please login to continue</p>
+      </div>
+      <div class="login_form">
+        <ion-list  no-margin>
+  
+          <ion-item no-lines no-padding>
+            <ion-input type="email" placeholder="Email address" value="" no-margin></ion-input>
+          </ion-item>
+  
+          <ion-item no-lines no-padding>
+            <ion-input type="password" placeholder="Password" no-margin></ion-input>
+            <span (click)="forgotPassword()" item-end>forget</span>
+          </ion-item>
+  
+        </ion-list>
+        <button  [navPush]="'TabsPage'" color="primary" ion-button block round>Login</button>
+      </div>
+      <div class="create_account">
+        <p text-uppercase>Don't have account?</p>
+        <button  [navPush]="'RegisterPage'"  text-uppercase ion-button clear>Sign up</button>
+      </div>
+  </ion-content>
+  -->
+  

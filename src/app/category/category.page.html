@@ -1,0 +1,11 @@
+<ion-content class="category_modal" padding>
+    <button class="close_btn" (click)="dismiss()" ion-button icon-only clear>
+       <ion-icon name="close"></ion-icon>
+    </button>
+    <ion-list no-margin>
+      <ion-item *ngFor="let item of category" no-lines>
+        <ion-label>{{item.title}}</ion-label>
+        <ion-checkbox checked="{{item.checked}}"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+</ion-content>
